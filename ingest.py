@@ -1,8 +1,8 @@
-# ingest.py
+#lib
 import fitz  # PyMuPDF
 from typing import List, Dict
-
-def extract_text_from_pdf_bytes(file_bytes: bytes) -> str:
+# ingestinon
+def txt_frm_pdf(file_bytes: bytes) -> str:
     """Extract raw text from uploaded PDF bytes."""
     doc = fitz.open(stream=file_bytes, filetype="pdf")
     text = ""

@@ -1,7 +1,7 @@
 #importing essential librarry
 import os
 from flask import Flask, request, jsonify, render_template
-from ingest import extract_text_from_pdf_bytes, sentence_chunk
+from ingest import txt_frm_pdf, sentence_chunk
 from retriever import HybridRetriever
 from generator_gemini import generate_answer
 
@@ -24,7 +24,7 @@ def upload_pdf():
     if file.filename == "":
         return jsonify({"error": "Empty filename"}), 400
 
-    raw_text = extract_text_from_pdf_bytes(file.read())
+    raw_text = txt_frm_pdf(file.read())
     chunks = sentence_chunk(raw_text, chunk_size=800, chunk_overlap=200)
     for c in chunks:
         c.setdefault("meta", {})
