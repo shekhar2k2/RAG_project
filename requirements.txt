@@ -1,0 +1,10 @@
+Flask
+google-generativeai
+sentence-transformers
+chromadb
+faiss-cpu
+numpy
+PyMuPDF
+rank_bm25
+tqdm
+rich
