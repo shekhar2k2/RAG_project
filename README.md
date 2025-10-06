@@ -1,8 +1,8 @@
-# 📚 Document Question-Answering System (RAG)
+# Document Question-Answering System (RAG)
 
 > An intelligent Flask-based application that lets you upload documents and ask questions about their content using AI-powered natural language processing.
 
-## 🌟 What Is This?
+## What Is This?
 
 This is a **Retrieval-Augmented Generation (RAG)** system that allows you to:
 - Upload your documents (PDFs, Word files, text files)
@@ -11,16 +11,16 @@ This is a **Retrieval-Augmented Generation (RAG)** system that allows you to:
 
 Think of it as having a smart assistant that reads your documents and answers questions about them instantly!
 
-## 🎯 Key Features
+## Key Features
 
-- **📤 Easy Document Upload**: Support for multiple document formats
-- **🤖 AI-Powered Answers**: Uses advanced language models (Google Gemini)
-- **🔍 Smart Search**: Finds relevant information from your documents automatically
-- **💬 Natural Language**: Ask questions like you're talking to a person
-- **⚡ Fast Responses**: Quick processing and answer generation
-- **🌐 Web Interface**: User-friendly web application
+- ** Easy Document Upload**: Support for multiple document formats
+- ** AI-Powered Answers**: Uses advanced language models (Google Gemini)
+- ** Smart Search**: Finds relevant information from your documents automatically
+- ** Natural Language**: Ask questions like you're talking to a person
+- ** Fast Responses**: Quick processing and answer generation
+- ** Web Interface**: User-friendly web application
 
-## 🏗️ System Architecture
+## System Architecture
 
 ![Alt text](https://github.com/shekhar2k2/RAG_project/blob/main/image.png)
 
