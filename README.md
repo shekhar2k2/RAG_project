@@ -40,7 +40,7 @@ Think of it as having a smart assistant that reads your documents and answers qu
    - AI Generator creates a comprehensive answer
    - Response is sent back to the user in JSON format
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
@@ -61,7 +61,7 @@ project/
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
 | **Web Framework** | Flask | Handles HTTP requests and responses |
-| **Document Processing** | PyPDF2, python-docx | Extracts text from various formats |
+| **Document Processing** | PyMuPDF, python-docx | Extracts text from various formats |
 | **Text Chunking** | LangChain | Splits documents into searchable pieces |
 | **Search Engine** | FAISS / ChromaDB | Vector-based document retrieval |
 | **AI Model** | Google Gemini | Generates natural language answers |
@@ -71,7 +71,7 @@ project/
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.11.3 or higher
 - pip (Python package manager)
 - Google Gemini API key
 
@@ -171,78 +171,10 @@ Uses Google's Gemini AI to:
 - Generate accurate, human-like answers
 - Format responses appropriately
 
-## 🛠️ Configuration
-
-Key settings you can adjust:
-
-- **Chunk Size**: Modify text splitting in `ingest.py`
-- **Model Selection**: Change AI model in `generator_gemini.py`
-- **Upload Limits**: Adjust file size limits in `app.py`
-- **Port**: Change Flask port in `app.py`
-
-## 🔒 Security Considerations
-
-- Store API keys in environment variables (never in code)
-- Validate uploaded file types and sizes
-- Implement user authentication for production use
-- Use HTTPS in production environments
-- Sanitize user inputs to prevent injection attacks
-
-## 🐛 Troubleshooting
-
-**Problem**: Upload fails
-- **Solution**: Check file format and size limits
-
-**Problem**: No answer generated
-- **Solution**: Verify API key is correctly set
-
-**Problem**: Slow responses
-- **Solution**: Reduce chunk size or optimize retrieval settings
-
-**Problem**: Installation errors
-- **Solution**: Ensure Python version is 3.8+ and all dependencies are installed
-
-## 📊 Performance Tips
-
-1. **Optimize chunk size** for your document type
-2. **Use GPU acceleration** if available
-3. **Cache frequently asked questions**
-4. **Implement pagination** for large documents
-5. **Monitor API usage** to stay within limits
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Google Gemini for AI capabilities
 - Flask community for excellent documentation
 - LangChain for document processing tools
 - Open-source contributors
 
-## 📧 Contact & Support
-
-For questions, issues, or suggestions:
-- Open an issue on GitHub
-- Email: your-email@example.com
-- Documentation: [Link to detailed docs]
-
-## 🗺️ Roadmap
-
-- [ ] Support for more document formats (Excel, PPT)
-- [ ] Multi-language support
-- [ ] Conversation history
-- [ ] Document comparison features
-- [ ] Export answers to PDF
-- [ ] Mobile application
-
----
-
-**Made with ❤️ using AI and Python**
-
-*Last Updated: October 2025*
