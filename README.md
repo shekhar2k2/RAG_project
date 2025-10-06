@@ -22,7 +22,7 @@ Think of it as having a smart assistant that reads your documents and answers qu
 
 ## 🏗️ System Architecture
 
-<img src="adv_rag_git/image.png" width="820" height="166" alt="image" />
+![Alt text]()
 
 ### How It Works:
 
