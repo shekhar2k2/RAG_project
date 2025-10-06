@@ -22,7 +22,7 @@ Think of it as having a smart assistant that reads your documents and answers qu
 
 ## 🏗️ System Architecture
 
-![Alt text]()
+![Alt text](https://github.com/shekhar2k2/RAG_project/blob/main/image.png)
 
 ### How It Works:
 
