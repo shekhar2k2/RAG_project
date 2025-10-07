@@ -56,7 +56,7 @@ project/
 └── uploads/                  # Uploaded documents storage (auto-created)
 ```
 
-## 🔧 Technology Stack
+## Technology
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
@@ -67,114 +67,4 @@ project/
 | **AI Model** | Google Gemini | Generates natural language answers |
 | **Embeddings** | Sentence Transformers | Converts text to searchable vectors |
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.11.3 or higher
-- pip (Python package manager)
-- Google Gemini API key
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repository-url>
-   cd <project-folder>
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Set up environment variables**
-   ```bash
-   # Create a .env file and add:
-   GEMINI_API_KEY=your_api_key_here
-   ```
-
-4. **Run the application**
-   ```bash
-   python app.py
-   ```
-
-5. **Open in browser**
-   ```
-   http://localhost:5000
-   ```
-
-## 📖 Usage Guide
-
-### Uploading Documents
-
-1. Navigate to the home page
-2. Click the "Upload" button
-3. Select your document (PDF, DOCX, TXT)
-4. Wait for processing confirmation
-
-### Asking Questions
-
-1. Type your question in the input box
-2. Click "Ask" or press Enter
-3. View the AI-generated answer
-4. The system shows which parts of your document were used
-
-## 🔑 API Endpoints
-
-### 1. Upload Document
-```http
-POST /upload
-Content-Type: multipart/form-data
-
-Response: {
-  "status": "success",
-  "message": "Document processed successfully"
-}
-```
-
-### 2. Ask Question
-```http
-POST /ask
-Content-Type: application/json
-
-Body: {
-  "query": "What is the main topic of the document?"
-}
-
-Response: {
-  "answer": "The main topic is...",
-  "query": "What is the main topic of the document?"
-}
-```
-
-## 🧩 Component Details
-
-### **app.py** - Flask Web Application
-The main server that handles user interactions, file uploads, and coordinates between different components.
-
-### **ingest.py** - Document Ingestion
-Responsible for:
-- Reading uploaded files
-- Extracting text content
-- Breaking text into smaller chunks for better searchability
-
-### **retriever.py** - Context Retrieval
-Handles:
-- Creating searchable indexes from document chunks
-- Finding relevant sections based on user questions
-- Returning context to the answer generator
-
-### **generator_gemini.py** - Answer Generation
-Uses Google's Gemini AI to:
-- Analyze the retrieved context
-- Generate accurate, human-like answers
-- Format responses appropriately
-
-## Acknowledgments
-
-- Google Gemini for AI capabilities
-- Flask community for excellent documentation
-- LangChain for document processing tools
-- Open-source contributors
 
