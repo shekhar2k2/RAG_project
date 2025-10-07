@@ -13,12 +13,12 @@ Think of it as having a smart assistant that reads your documents and answers qu
 
 ## Key Features
 
-- ** Easy Document Upload**: Support for multiple document formats
-- ** AI-Powered Answers**: Uses advanced language models (Google Gemini)
-- ** Smart Search**: Finds relevant information from your documents automatically
-- ** Natural Language**: Ask questions like you're talking to a person
-- ** Fast Responses**: Quick processing and answer generation
-- ** Web Interface**: User-friendly web application
+-  Easy Document Upload : Support for multiple document formats
+-  AI-Powered Answers: Uses advanced language models (Google Gemini)
+-  Smart Search: Finds relevant information from your documents automatically
+-  Natural Language: Ask questions like you're talking to a person
+-  Fast Responses: Quick processing and answer generation
+-  Web Interface: User-friendly web application
 
 ## System Architecture
 
