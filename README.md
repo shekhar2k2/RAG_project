@@ -40,21 +40,6 @@ Think of it as having a smart assistant that reads your documents and answers qu
    - AI Generator creates a comprehensive answer
    - Response is sent back to the user in JSON format
 
-## Project Structure
-
-```
-project/
-│
-├── app.py                    # Main Flask application (Web server)
-├── ingest.py                 # Document processing (Extract & chunk text)
-├── retriever.py              # Search engine (Index & retrieve context)
-├── generator_gemini.py       # AI answer generator (Google Gemini)
-│
-├── requirements.txt          # Python dependencies
-├── README.md                 # This file
-│
-└── uploads/                  # Uploaded documents storage (auto-created)
-```
 
 ## Technology
 
